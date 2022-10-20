@@ -52,7 +52,7 @@ export default {
   data: () => ({
     myIframe: null,
     tab: 0,
-    baseUrl: process.env.VUE_APP_TENANT_HOST,
+    baseUrl: "https://" + process.env.VUE_APP_TENANT_HOST,
     username: process.env.VUE_APP_DAVRA_LOGIN,
     password: process.env.VUE_APP_DAVRA_PASSWORD,
   }),

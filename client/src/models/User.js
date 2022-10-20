@@ -7,7 +7,7 @@ class User {
     // set API access details once User details loaded
     console.log(this)
     if (this.oauth) {
-      Vue.axios.defaults.baseURL = process.env.VUE_APP_TENANT_HOST;
+      Vue.axios.defaults.baseURL = "https://" + process.env.VUE_APP_TENANT_HOST;
       Vue.axios.defaults.headers.common.Authorization = 'Bearer ' + this.oauth.accessToken;
     }
   }

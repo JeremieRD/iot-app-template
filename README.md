@@ -62,18 +62,18 @@ In the first step of unit 8 you would have created a Docker microservice on your
 You need to add 2 sets of credentials to Jenkins
 
 1. Open the home page of your Jenkins installation
-2. Click “Credentials” on the left-hand menu
-3. Click on “System” -> “Global credentials” and “Add Credentials”
+2. Click `Credentials` on the left-hand menu
+3. Click on `System` -> `Global credentials` and `Add Credentials`
 ##### AWS Credentials
 
-1. Select the “Kind” to be “Username and password”
+1. Select the `Kind` to be `Username and password`
 2. As the username, enter your AWS Access Key
 3. As the password, enter your AWS Secret Key
 4. As the ID, enter “sample-aws-key”
 
 ##### Davra tenant admin user credentials
 
-1. Select the “Kind” to be “Username and password”
+1. Select the `Kind` to be `Username and password`
 2. As the username, enter your Davra username
 3. As the password, enter your Davra password
 4. As the ID, enter “SAMPLE_APP_CREDENTIALS”
@@ -81,11 +81,11 @@ You need to add 2 sets of credentials to Jenkins
 ##### Create pipline
 
 1. Open the home page of your Jenkins installation
-2. Click “New Item” on the left-hand menu
-3. Enter a name and selet "Pipeline" 
+2. Click `New Item` on the left-hand menu
+3. Enter a name and selet `Pipeline` 
 ![Pipeline](images/pipeline.png)
 
-Next select the box that says "This project is parameterized", in total there will be 7 string parameters
+Next select the box that says `This project is parameterized`, in total there will be 7 string parameters
 
 1. TENANTID - ID of your tenant: id.davra.com
 2. HOST - Vanity URL created in the routes section of your microservice
@@ -98,7 +98,7 @@ Next select the box that says "This project is parameterized", in total there wi
 Example of TENANTID parameter:
 ![TENANTID](images/parameters-example.png)
 
-In the "Pipeline" section select "Pipeline script from SCM" and paste in your repository, in "Bracnhes to build" enter "*/main" or whichever branch you wish to use.
+In the `Pipeline` section select `Pipeline script from SCM` and paste in your repository, in `Bracnhes to build` enter "*/main" or whichever branch you wish to use.
 ![SCM](images/pipeline-def.png)
 
 In the final stage in the Jenkinsfile, ensure the job names match the names of your playwright and tenable jobs.
