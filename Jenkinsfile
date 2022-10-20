@@ -115,8 +115,7 @@ node {
             "Playwright" : {
                 stage('Playwright job') {
                     build job: "playwright-job", parameters:[
-                        string(name: 'BRANCH',value: 'main'),
-                        string(name: 'WORKERS',value: '1')
+                        string(name: 'BRANCH',value: 'main')
                     ], wait: true
                 }
             }, 

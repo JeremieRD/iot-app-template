@@ -92,7 +92,7 @@ Next select the box that says "This project is parameterized", in total there wi
 3. SERVICE - UUID of the microservice you created on your tenant
 4. SECRET - UUID of the secret with your AWS ECR login credentials 
 5. AWS_ACCOUNT_ID - Your AWS account ID
-6. REGISTY NAME - Name of your AWS ECR
+6. REGISTRY_NAME - Name of your AWS ECR
 7. REGION - Region of your Registry
 
 Example of TENANTID parameter:
