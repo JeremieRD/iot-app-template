@@ -18,7 +18,7 @@ node {
         }
     }
 
-    withEnv(["DAVRA_CRED=Davra"]) {
+    withEnv(["DAVRA_CRED=SAMPLE_APP_CREDENTIALS"]) {
         stage('Build Docker image') {        
                 script {
                     sh "docker build -t ${env.AWS_ACCOUNT_ID}.dkr.ecr.${env.REGION}.amazonaws.com/${env.REGISTRY_NAME}:${env.BUILD_NUMBER} ./"
